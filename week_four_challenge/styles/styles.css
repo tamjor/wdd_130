@@ -1,25 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif&display=swap');
+
 body {
-    background-color: pink;
+    background-color: rgb(250, 166, 222);
 }
 
 h1 {
     text-align: center;
-    font-size: 24px;
-
+    font-size: 2.5em;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font: bolder;
 }
 
 .top-quote {
-    width: 50%;
-    background-color: pink;
     color: white;
+    text-align: center;
+    width: 33%;
+    margin: 15px auto;
 }
 
 img {
-    width: 30%;
+    width: 15%;
     display: block;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
 h1:hover {
     color: black;
+}
+
+.author {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    
+}
+
+.principles {
+    text-align: left;
+    width: 33%;
+    margin: 10px auto;
+    font-family: Montserrat, sans-serif;
+    font-weight: bolder;
+}
+
+.bottom-quote {
+    text-align: center;
+    width: 20%;
+    margin: 50px auto;
+    color: white;
+    font-size: 2em;
+    font: bolder;
+    
+}
+
+footer p {
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1;
 }
