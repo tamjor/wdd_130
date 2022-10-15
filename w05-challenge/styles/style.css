@@ -1,0 +1,15 @@
+main {
+    max-width: 1280px;
+    margin: 0;
+}
+
+.bottom-image {
+    background-color: grey;
+}
+
+.thumbnail {
+    border-radius: 250px;
+    border: 10px solid rgb(77, 71, 71);
+    width: 250px;
+    margin: 50px 75px;
+}
