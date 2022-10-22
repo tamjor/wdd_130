@@ -1,0 +1,36 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1200px;
+}
+h1 {
+    display: block;
+    font-size: 175px;
+    text-align: center;
+    letter-spacing: 15px;
+    color: black;
+    /* width: 2fr; */
+    grid-column: 1/3;
+    grid-row: 1/2;
+    z-index: 1;
+    background-color: transparent;
+}
+
+img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+h2 {
+    display: block;
+    background-color: rgb(165, 164, 164);
+    font-display: center;
+    font-size: 100px;
+    letter-spacing: 10px;
+    color: rgb(145, 28, 28);
+    grid-column: 2/3;
+    grid-row: 1/3;
+    /* width: 1fr; */
+    text-align: center;
+    padding-top: 300px;    
+}
