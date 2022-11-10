@@ -1,0 +1,83 @@
+main {
+    background-color: black;
+    width: 800px;
+}
+
+.screen {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    width: 300px;
+    background-color: white;
+    margin: 0 auto;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+h3 , h1 , p {
+    grid-column: 1/4;
+    text-align: center; 
+}
+
+h3 {
+    color: steelblue;
+    font-size: small;
+}
+
+h1 {
+    margin-top: -15px;
+}
+
+.screen p {
+    margin-top: -5px; 
+    color: gray;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: large;
+}
+
+sup {
+    font-size: small;
+    vertical-align: 75%;
+}
+
+.stat1 h3, .stat2 h3, .stat3 h3 {
+    color: white;
+    font-size: 25px;
+}
+
+.stat1 p, .stat2 p, .stat3 p {
+    margin-top: -25px;
+    font-size: small;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.stat1, .stat2, .stat3 {
+    width: 100px;
+    background-color: rgb(57, 102, 170);
+    text-align: center;
+    color: white;
+}
+
+.stat1 {
+    grid-column: 1/2;
+    border-bottom-left-radius: 15px; 
+}
+
+.stat2 {
+    
+    grid-column: 2/3;
+    border-left: 1px solid grey;
+    
+}
+
+.stat3 {
+    grid-column: 3/4;
+    border-left: 1px solid grey;
+    border-bottom-right-radius: 15px;
+}
