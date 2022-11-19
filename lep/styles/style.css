@@ -5,8 +5,9 @@
   display: none;
 }
 
-.panel li:hover + .scene {
+.panel .time:hover + .scene {
   display: inline;
+  background-color: #e5c038;
   
 }
 
