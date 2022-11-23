@@ -231,20 +231,27 @@ footer {
   margin-top: -10px;
 }
 
-footer p {
+footer .social img{
+  padding: 20px
+}
+
+footer .social {
+  margin-left: 50px;
+}
+
+footer .copy {
   text-align: right;
   margin-right: 50px;
+  margin-top: -110px;
 }
 
-footer a {
+footer .copy a {
   color: #e5c038;
-
-  
+  text-decoration: none;
 }
-
-
-
-
+ footer .copy a:hover {
+  background-color: #1e5c11;
+ }
 
 
 
