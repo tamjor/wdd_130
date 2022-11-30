@@ -6,16 +6,18 @@ body {
   margin: auto;
 }
 
-body p {
+body p, li {
   font-family: "Candara Light", Cambria, sans-serif;
   color: #e5c038; 
 }
 
-a, h3 {
+a, h3, ul {
   font-family: "Baskerville Old Face", "Times New Roman", serif;
   color: #e5c038;
   font-size: 28px;
 }
+
+
 
 /*---------------------------------------------------------*/
 
@@ -276,23 +278,46 @@ footer .copy a {
 
 
 
-/*---------------------------------------------------------*/
+/*---------------------Child pages------------------------------------*/
+
+.background {
+  display: grid;
+  grid-template-columns: repeat(7, 14.25%);
+  height: 2700px;
+}
+
+#accordion {
+  grid-column: 1/6;
+  display: block;
+  padding-top: 25px;
+  grid-row: 1;
+  z-index: 1;
+}
+
+#sidebar {
+  grid-column: 5/8;
+  grid-row: 1;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+   
+}
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: #020100;
   color: #e5c038;
   cursor: pointer;
-  padding: 18px;
-  width: 65%;
+  padding: 10px;
+  width: 95%;
   text-align: left;
-  font-size: large;
+  font-size: larger;
   border:#e5c038 4px solid;
   border-style: ridge;
   outline: none;
   transition: 0.4s;
-  margin-left: 2%;
   border-radius: 20px;
+  font-family: "Baskerville Old Face", "Times New Roman", serif;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -301,25 +326,6 @@ footer .copy a {
   color: #e5c038;
   border: #e5c038 4px solid;
   border-style: ridge;
-
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 20px;
-  background-color: white;
-  display: none;
-  margin-left: 3.5%;
-  margin-top: -25px;
-  width: 60%;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-bottom: #1e5c11 4px solid;
-  border-left:  #1e5c11 4px solid;
-  border-right:  #1e5c11 4px solid;
-  border-top: none;
- 
-  
 }
 
 /* Add a symbol to each button to indicate whether the collapsible content is open or closed:   */
@@ -335,8 +341,21 @@ footer .copy a {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
-
-
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 20px;
+  background-color: white;
+  display: none;
+  margin-left: 3%;
+  margin-top: -25px;
+  width: 85%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: #1e5c11 4px solid;
+  border-left:  #1e5c11 4px solid;
+  border-right:  #1e5c11 4px solid;
+  border-top: none;  
+}
 
 /* Tooltip container */
 .tooltip {
@@ -360,20 +379,16 @@ footer .copy a {
   border-radius: 10px;
   border: #e5c038 2px solid;
   border-style: ridge;
- 
-  
- 
-  /* Position the tooltip text - see examples below! */
+  /* Position the tooltip text */
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: -5px;
   left: 105%;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
-  visibility: visible;
-  
+  visibility: visible; 
 }
 
 .tooltip:hover {
@@ -383,7 +398,7 @@ footer .copy a {
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
-  top: 10%;
+  top: 20px;
   right: 100%; /* To the left of the tooltip */
   margin-top: -5px;
   border-width: 5px;
@@ -391,19 +406,50 @@ footer .copy a {
   border-color: transparent black transparent transparent;
 }
 
-
 .time {
-  color: #1e5c11;
+  color: #020100;
 }
 
-.sidebar {
-  display: block;
-  width: 25%;
-  border: #e5c038 5px solid;
+#side-text {
+  grid-column: 2/4;
+  z-index: 1;
+  background-color: #1e5c11;
+  padding: 25px;
   border-radius: 20px;
+  border: #e5c038 4px solid;
   border-style: ridge;
-  float: right;
-  margin-right: 2%;
+  margin-top: 25px; 
 }
 
+ul {
+  font-size: 1em;
+  margin-bottom: 0px;
+}
 
+#side-text li {
+  margin-left: 50px;
+  list-style-type: '~ ';
+}
+
+#side-imgs {
+  grid-row: 1; 
+}
+
+#apples {
+  margin-top: 250px;
+  border-radius: 20px;
+}
+
+#sausage {
+  margin-top: 300px;
+  border-radius: 20px;
+}
+
+#mushrooms {
+  margin-top: 300px;
+  border-radius: 20px;
+}
+
+#bag-end-b {
+  width: 100%;
+}
