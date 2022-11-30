@@ -11,7 +11,7 @@ body p, li {
   color: #e5c038; 
 }
 
-a, h3, ul {
+a, h3, h4 {
   font-family: "Baskerville Old Face", "Times New Roman", serif;
   color: #e5c038;
   font-size: 28px;
@@ -421,13 +421,17 @@ footer .copy a {
   margin-top: 25px; 
 }
 
-ul {
+h4 {
   font-size: 1em;
   margin-bottom: 0px;
+  color: #e5c038;
+}
+ 
+sup {
+  font-size: .4em;
 }
 
 #side-text li {
-  margin-left: 50px;
   list-style-type: '~ ';
 }
 
