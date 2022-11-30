@@ -278,42 +278,132 @@ footer .copy a {
 
 /*---------------------------------------------------------*/
 
-.scene {
-  display: none;
-}
-
-.panel .time:hover + .scene {
-  display: inline;
-  background-color: #e5c038;
-  
-}
-
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-  }
+  background-color: #020100;
+  color: #e5c038;
+  cursor: pointer;
+  padding: 18px;
+  width: 65%;
+  text-align: left;
+  font-size: large;
+  border:#e5c038 4px solid;
+  border-style: ridge;
+  outline: none;
+  transition: 0.4s;
+  margin-left: 2%;
+  border-radius: 20px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #1e5c11;
+  color: #e5c038;
+  border: #e5c038 4px solid;
+  border-style: ridge;
+
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 20px;
+  background-color: white;
+  display: none;
+  margin-left: 3.5%;
+  margin-top: -25px;
+  width: 60%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: #1e5c11 4px solid;
+  border-left:  #1e5c11 4px solid;
+  border-right:  #1e5c11 4px solid;
+  border-top: none;
+ 
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-  }
+}
+
+/* Add a symbol to each button to indicate whether the collapsible content is open or closed:   */
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #e5c038;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
 
 
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  font-size: smaller;
+  text-decoration: underline;
+  color: #1e5c11;
+  text-indent: 10px;
+  opacity: 50%;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #020100;
+  color: #e5c038;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  border: #e5c038 2px solid;
+  border-style: ridge;
+ 
+  
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  
+}
+
+.tooltip:hover {
+  opacity: 100%;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 10%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+
+.time {
+  color: #1e5c11;
+}
+
+.sidebar {
+  display: block;
+  width: 25%;
+  border: #e5c038 5px solid;
+  border-radius: 20px;
+  border-style: ridge;
+  float: right;
+  margin-right: 2%;
+}
 
 
