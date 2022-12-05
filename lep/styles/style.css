@@ -283,7 +283,7 @@ footer .copy a {
 .background {
   display: grid;
   grid-template-columns: repeat(7, 14.25%);
-  height: 2700px;
+  /* height: 2700px; */
 }
 
 #accordion {
@@ -300,6 +300,17 @@ footer .copy a {
   z-index: 0;
   display: grid;
   grid-template-columns: repeat(3, 33%);
+  height: fit-content;
+   
+}
+
+#the-sidebar {
+  grid-column: 5/8;
+  grid-row: 1;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  height: fit-content;
    
 }
 
@@ -421,6 +432,17 @@ footer .copy a {
   margin-top: 25px; 
 }
 
+#the-side-text {
+  grid-column: 2/4;
+  z-index: 1;
+  background-color: #1e5c11;
+  padding: 25px;
+  border-radius: 20px;
+  border: #e5c038 4px solid;
+  border-style: ridge;
+  margin-top: 25px; 
+}
+
 h4 {
   font-size: 1em;
   margin-bottom: 0px;
@@ -452,6 +474,7 @@ sup {
 #mushrooms {
   margin-top: 300px;
   border-radius: 20px;
+  padding-bottom: 150px;
 }
 
 #bag-end-b {
